@@ -7,7 +7,7 @@ August 7, 2022
 pdsnd_github
 
 ### Description
-Describe what your project is about and what it does
+code runs analyses on bikeshare data for 3 different US cities
 
 ### Files used
 Include the files used
