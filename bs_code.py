@@ -22,11 +22,11 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # obtain user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     finding_city = True
     while finding_city: 
         
-        # get user input
+        # obtain user input
         try:
             city = input("""
             \n\nWhich city do you want to analyze? Your possible choices:\n
@@ -45,11 +45,11 @@ def get_filters():
             print("Your entered city '{}' appears not to exist. Try another city.\n".format(city))
         
 
-    # get user input for month (all, january, february, ... , june)
+    # obtain user input for month (all, january, february, ... , june)
     finding_month = True
     while finding_month:
 
-        # get user input
+        # obtain user input
         try:
             month = input("""
             \n\nWhich month do you want to analyze? Your possible choices:\n
@@ -73,11 +73,11 @@ def get_filters():
     
     
     
-    # get user input for day of week (all, monday, tuesday, ... sunday)
+    # obtain user input for day of week (all, monday, tuesday, ... sunday)
     finding_day = True
     while finding_day:
 
-        # get user input
+        # obtain user input
         try:
             day = input("""
             \n\nWhich day do you want to analyze? Your possible choices:\n
@@ -247,7 +247,7 @@ def user_stats(df):
 def get_rawdata(df):
     showing_rawdata = True
     while showing_rawdata:
-        # get user input
+        # obtain user input
         try:
             usr_show_rawdata = input("""
             \n\nWould you like to see the raw data (first five rows)? Enter 'yes' or 'no'.\n
@@ -258,7 +258,7 @@ def get_rawdata(df):
         # check whether one of the predefined answer was found, if so exit loop
         if usr_show_rawdata == 'yes':
             
-            # inquire for more data
+            # inquire more data
             getting_more_rawdata = True
             idx = 0 
             while getting_more_rawdata: 
@@ -267,7 +267,7 @@ def get_rawdata(df):
                 print(df.iloc[idx:(idx+5)])
                 idx += 5
 
-                # get user input
+                # obtain user input
                 try:
                     usr_more_rawdata = input("""
                     \n\nWould you like to see 5 additional rows of data? Enter 'yes' or 'no'.\n
