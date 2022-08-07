@@ -258,7 +258,7 @@ def get_rawdata(df):
         # check whether one of the predefined answer was found, if so exit loop
         if usr_show_rawdata == 'yes':
             
-            # inquire for more data
+            # inquire more data
             getting_more_rawdata = True
             idx = 0 
             while getting_more_rawdata: 
